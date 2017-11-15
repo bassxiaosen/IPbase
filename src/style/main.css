@@ -1,0 +1,18 @@
+*{
+    padding: 0;
+    margin:0;
+    list-style: none;
+    font-size: 16px;
+}
+body{
+    background-color: rgba(32,45,92,.87);
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+    padding: 20px 0;
+    color: #fff;
+}
+.Antd{
+    text-align: center;
+}
