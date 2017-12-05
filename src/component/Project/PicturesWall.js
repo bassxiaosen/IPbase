@@ -3,6 +3,8 @@
  */
 import React from "react"
 import { Upload, Icon, Modal } from 'antd';
+import config from "../../../config"
+const {host} = config;
 
 export default class PicturesWall extends React.Component {
     state = {
@@ -53,7 +55,7 @@ export default class PicturesWall extends React.Component {
         return (
             <div className="clearfix" style={{display:'inline-block'}}>
                 <Upload
-                    action="http://139.199.220.49:8888/base/api/qiniu/info"
+                    action={`${host}/base/api/qiniu/info`}
                     listType="picture-card"
                     fileList={fileList}
                     onPreview={this.handlePreview}
